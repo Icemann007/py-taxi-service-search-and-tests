@@ -32,8 +32,3 @@ class AdminSiteTests(TestCase):
         self.assertContains(res, 'name="first_name"')
         self.assertContains(res, 'name="last_name"')
         self.assertContains(res, 'name="license_number"')
-
-    # def test_car_search_form_model(self):
-    #     url = reverse("admin:taxi_car_changelist")
-    #     res = self.client.get(url)
-    #     self.assertContains(res, '<input type="text" name="model"')
